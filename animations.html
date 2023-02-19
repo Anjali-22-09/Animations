@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animations2</title>
+	<style>
+		body{
+			background: linear-gradient(90deg, blue, skyblue, darkblue);
+			margin: 300px 0 0 300px;
+		}
+		h1{
+			text-shadow: 0 0 5px ghostwhite;
+			font-size: 50px;
+			font-style: italic;
+		}
+		span{
+			background-color: cadetblue;
+			box-shadow: 0 0 25px goldenrod;
+			animation-name: text;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: 10;
+			animation-direction: alternate-reverse;
+			position: relative;
+		}
+		span:nth-child(1){
+			color: red;
+			animation-delay: 0.1s;
+		}
+		span:nth-child(2){
+			color: green;
+			animation-delay: 0.3s;
+		}
+		span:nth-child(3){
+			color: blue;
+			animation-delay: 0.5s;
+		}
+		span:nth-child(4){
+			color: coral;
+			animation-delay: 0.7s;
+		}
+		span:nth-child(5){
+			color: darkmagenta;
+			animation-delay: 0.9s;
+		}
+		span:nth-child(6){
+			color: pink;
+			animation-delay: 1.1s;
+		}
+		span:nth-child(7){
+			color: darkorchid;
+			animation-delay: 1.3s;
+		}
+		span:nth-child(8){
+			color: darkkhaki;
+			animation-delay: 1.5s;
+		}
+		span:nth-child(9){
+			color: cyan;
+			animation-delay: 1.7s;
+		}
+		span:nth-child(10){
+			color: darkgoldenrod;
+			animation-delay: 1.9s;
+		}
+		@keyframes text{
+			0%{
+				top: 0;
+				filter: hue-rotate(180deg);
+			}
+			100%{
+				top: 200px;
+				filter: hue-rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		<span>A</span>
+		<span>N</span>
+		<span>I</span>
+		<span>M</span>
+		<span>A</span>
+		<span>T</span>
+		<span>I</span>
+		<span>O</span>
+		<span>N</span>
+		<span>S</span>
+	</h1>
+</body>
+</html>
